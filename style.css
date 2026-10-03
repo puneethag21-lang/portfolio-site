@@ -236,3 +236,24 @@
     .scroll-c { animation: none; }
     .btn, .row { transition: none; }
   }
+  @media (max-width: 900px) {
+  .hero {
+    height: auto;
+    min-height: 100svh;
+    padding: 110px 24px 120px;
+    display: flex;
+    align-items: center;
+  }
+  .hero-copy {
+    position: relative;
+    left: auto; right: auto; top: auto;
+    width: 100%;
+  }
+  h1 { font-size: clamp(40px, 13vw, 84px); white-space: normal; }
+  .sub { font-size: clamp(16px, 4.6vw, 24px); margin-top: 22px; }
+  .bio { font-size: 13px; margin-top: 20px; }
+  .cta { margin-top: 26px; gap: 12px; }
+  .btn-solid, .btn-line { min-width: 0; flex: 1 1 auto; }
+  .tag, .cross, .reticle, .geo, .dots, .side, .nav-links { display: none; }
+  .scroll-l .ln, .scroll-r .ln { display: none; }
+}
